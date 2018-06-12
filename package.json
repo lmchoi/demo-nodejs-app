@@ -1,0 +1,22 @@
+{
+  "name": "demo-nodejs-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmchoi/demo-nodejs-app.git"
+  },
+  "author": "Mandy Choi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmchoi/demo-nodejs-app/issues"
+  },
+  "homepage": "https://github.com/lmchoi/demo-nodejs-app#readme"
+}
