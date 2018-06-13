@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "test": "jest",
     "start": "node server.js"
   },
   "dependencies": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/lmchoi/demo-nodejs-app/issues"
   },
-  "homepage": "https://github.com/lmchoi/demo-nodejs-app#readme"
+  "homepage": "https://github.com/lmchoi/demo-nodejs-app#readme",
+  "devDependencies": {
+    "jest": "^23.1.0"
+  }
 }
