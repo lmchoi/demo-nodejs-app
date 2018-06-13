@@ -29,7 +29,7 @@ docker run --rm -it --init -p 9090:8080 demo-na-prod
 TODO - Javascript starter kit
 
 - [ ] .editorconfig
-- [ ] Security check / npm install -g nsp / nsp check
+- [x] Security check / npm install -g nsp / nsp check
 - [ ] a way to share WIP
 - [ ] Transpiler? Babel? Typescript?
 - [ ] Bundles - webpack? parcel?

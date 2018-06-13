@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
+    "check": "nsp check",
     "start": "node server.js"
   },
   "dependencies": {
