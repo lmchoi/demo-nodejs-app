@@ -11,6 +11,16 @@ docker run --rm -it --init -p 8080:8080 -v $(pwd):/app demo-na-dev bash
 nodemon src/*
 ```
 
+To run lint:
+```
+npm run pretest -s
+```
+
+To fix lint issues:
+```
+npm run pretest -- --fix
+```
+
 To test:
 ```
 npm test
@@ -34,7 +44,8 @@ TODO - Javascript starter kit
 - [ ] Transpiler? Babel? Typescript?
 - [ ] Bundles - webpack? parcel?
 - [ ] Sourcemap for debug
-- [ ] ESLint - consider presets to start with / Consider using eslint-watch
+- [x] ESLint - consider presets to start with
+- [ ] use eslint-watch
 - [ ] unit test framework / enzyme / jest - react / mocha / karma
 - [ ] headless / DOM Testing / unit testing
 - [ ] HTTP clients / testing
