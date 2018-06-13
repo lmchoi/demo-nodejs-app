@@ -1,7 +1,10 @@
-FROM node:6
+FROM node:carbon
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /app
+
+# Install nodemon for hot reload
+RUN npm install -g nodemon
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -13,7 +16,7 @@ RUN npm install
 # RUN npm install --only=production
 
 # Bundle app source
-COPY . .
+COPY src /app
 
 EXPOSE 8080
-CMD [ "npm", "start" ]
+CMD [ "node", "server.js" ]
