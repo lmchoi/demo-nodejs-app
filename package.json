@@ -7,7 +7,7 @@
     "test": "jest --verbose",
     "pretest": "eslint --ignore-path .gitignore .",
     "check": "nsp check",
-    "start": "nodemon src/* --exec babel-node --presets env"
+    "start": "nodemon src/server.js --exec babel-node --presets env"
   },
   "dependencies": {
     "express": "^4.16.1"
