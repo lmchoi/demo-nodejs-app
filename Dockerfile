@@ -3,7 +3,7 @@ FROM node:carbon
 # Create app directory
 WORKDIR /app
 
-RUN npm install -g nodemon
+RUN npm install -g nodemon babel-cli babel-preset-env
 # RUN npm install -g nodemon babel-cli babel-core babel-preset-env webpack jest jest-cli eslint eslint-plugin-import eslint-plugin-jest eslint-plugin-node --save-dev
 
 # Install app dependencies
@@ -19,4 +19,4 @@ RUN npm install
 COPY src /app
 
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+CMD [ "npm", "start" ]
